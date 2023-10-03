@@ -40,7 +40,7 @@ Entities are often expressed as snippets of `JSON`, with three standard fields: 
 
 [followthemoney github](https://github.com/alephdata/followthemoney)
 
-[followthemoney-store](github.com/alephdata/followthemoney-store) - a SQL storage implementation for follow the money data
+[followthemoney-store](https://github.com/alephdata/followthemoney-store) - a SQL storage implementation for follow the money data
 
 ### Dataset and DataCatalog
 
@@ -66,11 +66,11 @@ id,dataset,schema,prop,value
 
 *FollowTheMoney* data can be stored in line-based `json` files. This is the main data format to provide datasets, share them between projects or other data stores.
 
-A convenction is to store follow the money data in line-based json files named `entities.ftm.json`
+A convention is to store follow the money data in line-based json files named `entities.ftm.json`
 
 As the data model is as well used in [Aleph](https://aleph.occrp.org), data can be exported from or imported to any aleph instance using the `alephclient`.
 
-Other data stores are implemented in `nomenklatura`, and extended in `ftmq` to provide more data querying possibilities. The `ftmq` library provides helpers to import and export datasets from `json` into a **SQL database**, **LevelDB** or even [Clickhouse](https://github.com/investigativedata/ftm-columnstore/)
+Other data stores are implemented in `nomenklatura`, and extended in `ftmq` to provide more data querying possibilities. The `ftmq` library provides helpers to import and export datasets from `json` into a **SQL database**, **LevelDB** or even [Clickhouse](https://clickhouse.com/).
 
 ### ftmq
 
@@ -82,7 +82,7 @@ It uses the data stores introduced by `nomenklatura` but extends them with an ex
 
 ## generating datasets
 
-The base library `followthemoney` provides a [mapping interface to create entities from structured data sources](followthemoney.tech/docs/mappings/).
+The base library `followthemoney` provides a [mapping interface to create entities from structured data sources](https://followthemoney.tech/docs/mappings/).
 
 But to handle more use cases and write less (repeated) python code for each dataset, we extended this functionality with [investigraph](https://investigraph.dev).
 
