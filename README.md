@@ -141,12 +141,9 @@ The frontend application uses [ftm-joy-ui](https://github.com/investigativedata/
 
 These python packages are needed to work with the described stack:
 
-(Due the lack of `pydantic v2` support of `prefect`, a dependency of `investigraph`, we need to pin some versions here. This should be solved by [the end of october](https://github.com/PrefectHQ/prefect/issues/10145))
-
 ```
 followthemoney
-fingerprints<1.2
-nomenklatura<3.5
+nomenklatura
 ftmq
 investigraph
 alephclient
